@@ -3,175 +3,288 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nilam Dangi — Professional Portfolio</title>
+<title>Nilam Dangi — Portfolio</title>
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body {
     font-family: 'Segoe UI', Arial, sans-serif;
+    background: #0b0e14;
+    color: #cfd8e3;
     line-height: 1.7;
-    color: #2c3e50;
-    background: #fafafa;
   }
-  header {
-    background: #1a2a3a;
-    color: white;
-    padding: 60px 20px;
-    text-align: center;
-  }
-  header h1 { font-size: 2.4em; margin-bottom: 10px; }
-  header p.role { font-size: 1.2em; color: #a8c0d8; margin-bottom: 20px; }
   nav {
-    background: #16212e;
-    padding: 15px;
-    text-align: center;
+    position: sticky;
+    top: 0;
+    background: #0d1119;
+    border-bottom: 1px solid #1c2330;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
   }
-  nav a {
-    color: #a8c0d8;
+  nav .logo { font-weight: 800; color: #6dd0ff; font-size: 1.3em; }
+  nav .links a {
+    color: #b8c4d4;
     text-decoration: none;
-    margin: 0 20px;
+    margin-left: 30px;
     font-weight: 600;
     font-size: 0.95em;
   }
-  nav a:hover { color: white; }
-  .container {
-    max-width: 850px;
-    margin: 0 auto;
-    padding: 50px 20px;
-  }
-  section { margin-bottom: 60px; }
-  h2 {
-    color: #1a2a3a;
-    border-bottom: 3px solid #3d6b93;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-    font-size: 1.6em;
-  }
-  .bio p { margin-bottom: 15px; font-size: 1.05em; }
-  .value-prop {
-    background: #eef4f9;
-    border-left: 4px solid #3d6b93;
-    padding: 20px 25px;
-    margin-top: 20px;
-    font-style: italic;
-  }
-  .artifact {
-    background: white;
-    border: 1px solid #e0e0e0;
+  nav .links a:hover { color: #6dd0ff; }
+
+  section { padding: 80px 40px; max-width: 950px; margin: 0 auto; }
+
+  .hero h1 { font-size: 3em; color: #fff; margin-bottom: 15px; }
+  .hero p.subtitle { font-size: 1.2em; color: #9fb1c7; max-width: 700px; margin-bottom: 30px; }
+  .btns { margin-bottom: 30px; }
+  .btn-primary {
+    background: linear-gradient(90deg, #4facfe, #7b61ff);
+    color: white;
+    border: none;
+    padding: 12px 26px;
     border-radius: 8px;
-    padding: 30px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-  }
-  .artifact h3 {
-    color: #1a2a3a;
-    font-size: 1.3em;
-    margin-bottom: 15px;
-  }
-  .artifact-field { margin-bottom: 18px; }
-  .artifact-field .label {
     font-weight: 700;
-    color: #3d6b93;
-    display: block;
-    margin-bottom: 5px;
-    font-size: 0.9em;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
+    text-decoration: none;
+    margin-right: 15px;
+    display: inline-block;
   }
-  .artifact a {
-    color: #3d6b93;
+  .btn-secondary {
+    border: 1px solid #3a4558;
+    color: #cfd8e3;
+    padding: 12px 26px;
+    border-radius: 8px;
+    font-weight: 700;
+    text-decoration: none;
+    display: inline-block;
+  }
+  .tags { margin-top: 25px; }
+  .tag {
+    display: inline-block;
+    background: #141b28;
+    border: 1px solid #263042;
+    color: #8fd3ff;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 0.85em;
+    margin: 4px 6px 4px 0;
+  }
+
+  .card {
+    background: #121722;
+    border: 1px solid #1e2635;
+    border-radius: 12px;
+    padding: 30px;
+    margin-top: 25px;
+  }
+  .card h3 { color: #fff; font-size: 1.15em; margin-bottom: 5px; }
+  .card .meta { color: #6dd0ff; font-size: 0.9em; margin-bottom: 12px; font-weight: 600; }
+  .card ul { margin-left: 20px; color: #b8c4d4; }
+  .card ul li { margin-bottom: 8px; }
+
+  h2.section-title {
+    color: #fff;
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  p.section-intro { color: #8fa0b8; margin-bottom: 10px; max-width: 700px; }
+
+  .artifact-field { margin-bottom: 16px; }
+  .artifact-field .label {
+    color: #6dd0ff;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    letter-spacing: 0.5px;
+    display: block;
+    margin-bottom: 4px;
+  }
+  .artifact-field a { color: #8fd3ff; }
+
+  .contact-card {
+    background: #121722;
+    border: 1px solid #1e2635;
+    border-radius: 12px;
+    padding: 40px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .contact-card a {
+    color: #6dd0ff;
+    text-decoration: none;
     font-weight: 600;
   }
+
   footer {
     text-align: center;
     padding: 30px;
-    color: #888;
-    font-size: 0.9em;
+    color: #566379;
+    font-size: 0.85em;
+    border-top: 1px solid #1c2330;
   }
 </style>
 </head>
 <body>
 
-<header>
-  <h1>Nilam Dangi</h1>
-  <p class="role">Financial Analyst | MS in Artificial Intelligence, Data Analytics Specialization</p>
-</header>
-
 <nav>
-  <a href="#about">About</a>
-  <a href="#artifacts">Artifacts</a>
+  <div class="logo">ND</div>
+  <div class="links">
+    <a href="#home">Home</a>
+    <a href="#experience">Experience</a>
+    <a href="#education">Education</a>
+    <a href="#artifacts">Artifacts</a>
+    <a href="#contact">Contact</a>
+  </div>
 </nav>
 
-<div class="container">
+<section id="home" class="hero">
+  <h1>Nilam Dangi</h1>
+  <p class="subtitle">Financial Analyst specializing in FP&A, variance analysis, and financial reporting for distribution and technology environments. Building AI and data analytics skills to bring predictive, decision-ready insight to modern finance.</p>
+  <div class="btns">
+    <a href="#artifacts" class="btn-primary">View Artifacts</a>
+    <a href="#contact" class="btn-secondary">Contact Me</a>
+  </div>
+  <div class="tags">
+    <span class="tag">Excel (VBA, Power Query)</span>
+    <span class="tag">SQL</span>
+    <span class="tag">Python</span>
+    <span class="tag">Tableau</span>
+    <span class="tag">Power BI</span>
+    <span class="tag">Financial Modeling</span>
+    <span class="tag">Variance Analysis</span>
+    <span class="tag">AI/Prompt Engineering</span>
+  </div>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <div class="bio">
-      <p>I'm a Financial Analyst with a background in FP&A, variance analysis, and financial reporting, currently supporting a multi-site distribution business at Sysco Corporation. Alongside my work, I'm completing an MS in Artificial Intelligence with a Data Analytics specialization at Indiana Wesleyan University.</p>
-      <p>I'm not trying to leave finance behind — I'm building the skills to be the person who can take a manual, fragmented reporting process and turn it into something automated, accurate, and genuinely useful to leadership. That combination of financial judgment and applied AI/data skills is where I want to build my career.</p>
+  <div class="card">
+    <h3>Personal Value Proposition</h3>
+    <p style="margin-top:10px;">I turn manual, fragmented financial reporting into reliable, decision-ready insight — and I'm building the AI/analytics skills to do that faster and at greater scale. I understand both the operational reality of a distribution business and the technical tools to model and report on it, and I'm most valuable in roles where finance domain knowledge and technical execution have to work together.</p>
+  </div>
+</section>
+
+<section id="experience">
+  <h2 class="section-title">Experience</h2>
+  <p class="section-intro">A progression through FP&A, data analysis, and financial modeling roles across distribution, technology, and financial services.</p>
+
+  <div class="card">
+    <h3>Financial Analyst</h3>
+    <div class="meta">Sysco Corporation — Kansas City, KS | November 2025 – Present</div>
+    <ul>
+      <li>Develop weekly and monthly financial reporting for multi-site distribution operations, analyzing sales, inflation, shrink, spoilage, and margin trends</li>
+      <li>Conduct monthly and quarterly P&L analysis to monitor revenue, expenses, and profitability across product lines</li>
+      <li>Build Tableau dashboards and executive presentations used in senior leadership reviews</li>
+      <li>Created a contract risk tracker to monitor customer terminations and support revenue retention</li>
+      <li>Built an automated spend tracking tool improving visibility into promotional and operating expenses</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>Financial Analyst (FP&A Analyst)</h3>
+    <div class="meta">Takeo Tech LLC — Remote | July 2024 – October 2025</div>
+    <ul>
+      <li>Built financial models to evaluate new products, pricing strategy, and market expansion initiatives</li>
+      <li>Prepared recurring financial reports and performance analyses for leadership</li>
+      <li>Created dashboards and reporting tools using Excel and Power BI to monitor financial and operational KPIs</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>Business Analyst (Data Analyst)</h3>
+    <div class="meta">Code Gravity LLC — Dallas, TX | September 2023 – July 2024</div>
+    <ul>
+      <li>Extracted, transformed, and analyzed operational and financial data using SQL and Excel</li>
+      <li>Developed reports and dashboards to track revenue, expenses, and operational performance</li>
+      <li>Wrote and optimized SQL queries, reducing query execution time</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>FP&A Analyst Intern</h3>
+    <div class="meta">Security Benefit — Topeka, KS | May 2022 – May 2023</div>
+    <ul>
+      <li>Analyzed variances between actual and planned performance, improving financial performance</li>
+      <li>Conducted trend and forecast analysis, boosting decision-making accuracy by 15%</li>
+      <li>Delivered KPI insights contributing to an 18% increase in gross profit of investment products</li>
+    </ul>
+  </div>
+</section>
+
+<section id="education">
+  <h2 class="section-title">Education</h2>
+
+  <div class="card">
+    <h3>MS, Artificial Intelligence — Data Analytics Specialization</h3>
+    <div class="meta">Indiana Wesleyan University | In Progress</div>
+  </div>
+
+  <div class="card">
+    <h3>Bachelor of Business Administration, Finance and Data Analytics</h3>
+    <div class="meta">Washburn University, Topeka, KS | Cumulative GPA: 3.87</div>
+  </div>
+</section>
+
+<section id="artifacts">
+  <h2 class="section-title">Portfolio Artifacts</h2>
+  <p class="section-intro">Work demonstrating applied AI/ML skills grounded in real financial domain expertise.</p>
+
+  <div class="card">
+    <h3>Artifact 1: AI-Powered Finance Assistants — Applying Design Thinking to Build Two Chatbots</h3>
+
+    <div class="artifact-field">
+      <span class="label">Introduction</span>
+      As part of my AI/ML coursework, I completed a hands-on AI Lab where I practiced with generative AI tools and then designed, built, and tested two chatbots grounded in my professional background in distribution finance.
     </div>
-    <div class="value-prop">
-      "I turn manual, fragmented financial reporting into reliable, decision-ready insight — and I'm building the AI/analytics skills to do that faster and at greater scale."
-    </div>
-  </section>
 
-  <section id="artifacts">
-    <h2>Portfolio Artifacts</h2>
-
-    <div class="artifact">
-      <h3>Artifact 1: AI-Powered Finance Assistants — Applying Design Thinking to Build Two Chatbots</h3>
-
-      <div class="artifact-field">
-        <span class="label">Introduction</span>
-        As part of my AI/ML coursework, I completed a hands-on AI Lab where I practiced with generative AI tools and then designed, built, and tested two chatbots grounded in my professional background in distribution finance.
-      </div>
-
-      <div class="artifact-field">
-        <span class="label">Description</span>
-        I built two Chatbase-hosted AI agents using the design thinking framework (empathy, define, ideate, prototype, test): first, a Distribution Finance Reporting Assistant that explains financial terms like shrink, spoilage, and inflation in plain language; then a more advanced Variance Investigation Assistant that guides a user through a structured, multi-step diagnostic process to identify the likely root cause of a financial metric change.
-      </div>
-
-      <div class="artifact-field">
-        <span class="label">Objective</span>
-        To apply generative AI tools and design thinking methodology to real problems in financial reporting and analysis — moving from simple Q&A to more complex, sequential reasoning as my skills developed through the lab.
-      </div>
-
-      <div class="artifact-field">
-        <span class="label">Process</span>
-        I started by practicing with multiple LLMs and a custom GPT to understand how prompt design and context affect output quality. I then applied design thinking to plan each bot's objective, scope, and constraints before building anything. The first bot used single-turn Q&A; the second required explicit sequencing logic so the AI would ask one diagnostic question at a time and build toward a conclusion, rather than presenting the whole framework at once. I tested both extensively, including with unplanned questions and deliberately ambiguous input, to verify they behaved as intended.
-      </div>
-
-      <div class="artifact-field">
-        <span class="label">Tools and Technologies Used</span>
-        Chatbase (AI agent builder), GPT-5.4 Mini, prompt engineering, design thinking methodology.
-      </div>
-
-      <div class="artifact-field">
-        <span class="label">Value Proposition</span>
-        This project demonstrates my ability to translate real financial domain expertise into practical, well-scoped AI tools — going beyond just using AI to actually designing how it should behave, what it should and shouldn't do, and how to test it rigorously.
-      </div>
-
-      <div class="artifact-field">
-        <span class="label">Unique Value</span>
-        Unlike a generic coursework exercise, both bots are grounded in real distribution finance concepts I work with professionally, and the progression from a simple to a more complex build shows growth in applying AI/ML concepts over the course of a single assignment.
-      </div>
-
-      <div class="artifact-field">
-        <span class="label">Relevance</span>
-        Directly relevant to FP&A, financial systems, and business analytics roles, where the ability to combine finance domain knowledge with practical AI/data tooling is an increasingly valued and differentiating skill.
-      </div>
-
-      <div class="artifact-field">
-        <span class="label">References</span>
-        <a href="https://www.chatbase.co/7F2svojsxQ59I_jbQLGZt/help" target="_blank">Live Agent — Try the Chatbot</a>
-      </div>
+    <div class="artifact-field">
+      <span class="label">Description</span>
+      I built two Chatbase-hosted AI agents using the design thinking framework (empathy, define, ideate, prototype, test): first, a Distribution Finance Reporting Assistant that explains financial terms like shrink, spoilage, and inflation in plain language; then a more advanced Variance Investigation Assistant that guides a user through a structured, multi-step diagnostic process to identify the likely root cause of a financial metric change.
     </div>
 
-  </section>
+    <div class="artifact-field">
+      <span class="label">Objective</span>
+      To apply generative AI tools and design thinking methodology to real problems in financial reporting and analysis — moving from simple Q&A to more complex, sequential reasoning as my skills developed through the lab.
+    </div>
 
-</div>
+    <div class="artifact-field">
+      <span class="label">Process</span>
+      I started by practicing with multiple LLMs and a custom GPT to understand how prompt design and context affect output quality. I then applied design thinking to plan each bot's objective, scope, and constraints before building anything. The first bot used single-turn Q&A; the second required explicit sequencing logic so the AI would ask one diagnostic question at a time and build toward a conclusion. I tested both extensively, including with unplanned questions and deliberately ambiguous input.
+    </div>
 
-<footer>
-  &copy; 2026 Nilam Dangi
-</footer>
+    <div class="artifact-field">
+      <span class="label">Tools and Technologies Used</span>
+      Chatbase (AI agent builder), GPT-5.4 Mini, prompt engineering, design thinking methodology.
+    </div>
+
+    <div class="artifact-field">
+      <span class="label">Value Proposition</span>
+      This project demonstrates my ability to translate real financial domain expertise into practical, well-scoped AI tools — going beyond just using AI to actually designing how it should behave and how to test it rigorously.
+    </div>
+
+    <div class="artifact-field">
+      <span class="label">Unique Value</span>
+      Unlike a generic coursework exercise, both bots are grounded in real distribution finance concepts I work with professionally, and the progression from a simple to a more complex build shows growth in applying AI/ML concepts over a single assignment.
+    </div>
+
+    <div class="artifact-field">
+      <span class="label">Relevance</span>
+      Directly relevant to FP&A, financial systems, and business analytics roles, where combining finance domain knowledge with practical AI/data tooling is an increasingly valued skill.
+    </div>
+
+    <div class="artifact-field">
+      <span class="label">References</span>
+      <a href="https://www.chatbase.co/7F2svojsxQ59I_jbQLGZt/help" target="_blank">Live Agent — Try the Chatbot</a>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2 class="section-title">Contact</h2>
+  <div class="contact-card">
+    <p style="margin-bottom:15px;">Open to FP&A, Business Analyst, and BI Analyst opportunities.</p>
+    <a href="mailto:nilam.dangi.57@gmail.com">nilam.dangi.57@gmail.com</a>
+  </div>
+</section>
+
+<footer>&copy; 2026 Nilam Dangi</footer>
 
 </body>
 </html>
