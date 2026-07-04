@@ -36,7 +36,8 @@
   section { padding: 80px 40px; max-width: 950px; margin: 0 auto; }
 
   .hero h1 { font-size: 3em; color: #fff; margin-bottom: 15px; }
-  .hero p.subtitle { font-size: 1.2em; color: #9fb1c7; max-width: 700px; margin-bottom: 30px; }
+  .hero p.subtitle { font-size: 1.15em; color: #6dd0ff; font-weight: 600; max-width: 700px; margin-bottom: 20px; }
+  .hero p.desc { font-size: 1.05em; color: #9fb1c7; max-width: 720px; margin-bottom: 30px; }
   .btns { margin-bottom: 30px; }
   .btn-primary {
     background: linear-gradient(90deg, #4facfe, #7b61ff);
@@ -81,6 +82,7 @@
   .card .meta { color: #6dd0ff; font-size: 0.9em; margin-bottom: 12px; font-weight: 600; }
   .card ul { margin-left: 20px; color: #b8c4d4; }
   .card ul li { margin-bottom: 8px; }
+  .card p { color: #b8c4d4; }
 
   h2.section-title {
     color: #fff;
@@ -101,6 +103,19 @@
   }
   .artifact-field a { color: #8fd3ff; }
 
+  .artifact-img {
+    width: 100%;
+    border-radius: 8px;
+    margin: 20px 0;
+    border: 1px solid #1e2635;
+    display: block;
+  }
+
+  .product-name {
+    color: #4facfe;
+    font-weight: 800;
+  }
+
   .contact-card {
     background: #121722;
     border: 1px solid #1e2635;
@@ -113,6 +128,18 @@
     color: #6dd0ff;
     text-decoration: none;
     font-weight: 600;
+  }
+  .contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+  }
+  .contact-links a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
   }
 
   footer {
@@ -139,7 +166,8 @@
 
 <section id="home" class="hero">
   <h1>Nilam Dangi</h1>
-  <p class="subtitle">Financial Analyst specializing in FP&A, variance analysis, and financial reporting for distribution and technology environments. Building AI and data analytics skills to bring predictive, decision-ready insight to modern finance.</p>
+  <p class="subtitle">Finance & Data Analytics Professional | Building AI Integration Skills for Modern Decision-Making</p>
+  <p class="desc">I bring financial and analytical experience across distribution, technology, and financial services — building financial models, dashboards, and reporting systems that turn complex data into clear business decisions. I'm now deepening that foundation with an MS in Artificial Intelligence, focused on applying AI and data analytics to make financial and operational decision-making faster, smarter, and more predictive.</p>
   <div class="btns">
     <a href="#artifacts" class="btn-primary">View Artifacts</a>
     <a href="#contact" class="btn-secondary">Contact Me</a>
@@ -157,7 +185,12 @@
 
   <div class="card">
     <h3>Personal Value Proposition</h3>
-    <p style="margin-top:10px;">I turn manual, fragmented financial reporting into reliable, decision-ready insight — and I'm building the AI/analytics skills to do that faster and at greater scale. I understand both the operational reality of a distribution business and the technical tools to model and report on it, and I'm most valuable in roles where finance domain knowledge and technical execution have to work together.</p>
+    <p style="margin-top:10px;">I combine financial acumen with technical fluency in SQL, Python, Tableau, Power BI, and AI tooling — translating complex data into decisions that matter, across any industry. My goal is to bring that same rigor to organizations building the future of intelligent technology.</p>
+  </div>
+
+  <div class="card">
+    <h3>Target Audience</h3>
+    <p style="margin-top:10px;">This portfolio is designed for hiring managers, technical recruiters, faculty, and industry professionals across finance, technology, and analytics who want to explore my work at the intersection of financial analysis, data analytics, and applied AI. It supports recruiters evaluating my technical and financial expertise, as well as educators and peers interested in how AI and data tools are reshaping financial decision-making.</p>
   </div>
 </section>
 
@@ -227,26 +260,28 @@
   <p class="section-intro">Work demonstrating applied AI/ML skills grounded in real financial domain expertise.</p>
 
   <div class="card">
-    <h3>Artifact 1: AI-Powered Finance Assistants — Applying Design Thinking to Build Two Chatbots</h3>
+    <h3>Artifact 1: <span class="product-name">Fintell</span> — An AI Variance Investigation Assistant</h3>
+
+    <img src="variance-bot-demo.png" alt="Fintell conversation example" class="artifact-img">
 
     <div class="artifact-field">
       <span class="label">Introduction</span>
-      As part of my AI/ML coursework, I completed a hands-on AI Lab where I practiced with generative AI tools and then designed, built, and tested two chatbots grounded in my professional background in distribution finance.
+      As part of my AI/ML coursework, I designed and built <span class="product-name">Fintell</span>, an AI assistant that helps financial analysts and business stakeholders systematically diagnose why a financial metric moved — grounded in my professional background in financial reporting and analysis.
     </div>
 
     <div class="artifact-field">
       <span class="label">Description</span>
-      I built two Chatbase-hosted AI agents using the design thinking framework (empathy, define, ideate, prototype, test): first, a Distribution Finance Reporting Assistant that explains financial terms like shrink, spoilage, and inflation in plain language; then a more advanced Variance Investigation Assistant that guides a user through a structured, multi-step diagnostic process to identify the likely root cause of a financial metric change.
+      Fintell is a conversational AI tool that guides a user through a structured, multi-step diagnostic process to identify the likely root cause of a financial variance, such as a margin decline. Rather than answering with a single response, it asks targeted follow-up questions in sequence — narrowing down whether a change is price, volume, or mix-driven, and whether it's a one-time event or a recurring trend — the way an experienced financial analyst would approach a real investigation.
     </div>
 
     <div class="artifact-field">
       <span class="label">Objective</span>
-      To apply generative AI tools and design thinking methodology to real problems in financial reporting and analysis — moving from simple Q&A to more complex, sequential reasoning as my skills developed through the lab.
+      To apply generative AI tools and design thinking methodology to a real problem in financial analysis: helping someone move from "something looks off" to a clear, actionable hypothesis about what's driving a metric change.
     </div>
 
     <div class="artifact-field">
       <span class="label">Process</span>
-      I started by practicing with multiple LLMs and a custom GPT to understand how prompt design and context affect output quality. I then applied design thinking to plan each bot's objective, scope, and constraints before building anything. The first bot used single-turn Q&A; the second required explicit sequencing logic so the AI would ask one diagnostic question at a time and build toward a conclusion. I tested both extensively, including with unplanned questions and deliberately ambiguous input.
+      I used the design thinking framework (empathy, define, ideate, prototype, test) to plan Fintell's objective, scope, and behavioral rules before building anything. I wrote a system prompt enforcing sequential reasoning — asking one diagnostic question at a time and building toward a conclusion, rather than presenting an entire framework at once. I tested it extensively, including with unplanned follow-up questions and a deliberately vague, ambiguous opener, to confirm it reasoned correctly and asked for clarification rather than guessing. I also designed and branded the interface, including a custom name, greeting, and guided suggestion prompts, to give it a professional, product-like feel.
     </div>
 
     <div class="artifact-field">
@@ -256,22 +291,22 @@
 
     <div class="artifact-field">
       <span class="label">Value Proposition</span>
-      This project demonstrates my ability to translate real financial domain expertise into practical, well-scoped AI tools — going beyond just using AI to actually designing how it should behave and how to test it rigorously.
+      This project demonstrates my ability to translate real financial domain expertise into a practical, well-scoped AI tool — going beyond just using AI to designing how it should reason, what it should and shouldn't do, and how to test it rigorously. Naming and branding it as a standalone product reflects how I think about turning analytical processes into usable tools, not just one-off exercises.
     </div>
 
     <div class="artifact-field">
       <span class="label">Unique Value</span>
-      Unlike a generic coursework exercise, both bots are grounded in real distribution finance concepts I work with professionally, and the progression from a simple to a more complex build shows growth in applying AI/ML concepts over a single assignment.
+      Unlike a simple Q&A chatbot, Fintell uses sequential, branching reasoning to mimic a real analytical investigation — and during testing, it generated sharper, more specific follow-up questions than what I had explicitly scripted, showing it could reason within a framework rather than just follow a rigid script.
     </div>
 
     <div class="artifact-field">
       <span class="label">Relevance</span>
-      Directly relevant to FP&A, financial systems, and business analytics roles, where combining finance domain knowledge with practical AI/data tooling is an increasingly valued skill.
+      Directly relevant to FP&A, financial systems, and business analytics roles, where structured root-cause thinking is a core, transferable skill — and where the ability to combine financial judgment with practical AI tooling is an increasingly valued differentiator.
     </div>
 
     <div class="artifact-field">
       <span class="label">References</span>
-      <a href="https://www.chatbase.co/7F2svojsxQ59I_jbQLGZt/help" target="_blank">Live Agent — Try the Chatbot</a>
+      <a href="https://www.chatbase.co/7F2svojsxQ59I_jbQLGZt/help" target="_blank">Try Fintell — Live Agent</a>
     </div>
   </div>
 </section>
@@ -279,8 +314,17 @@
 <section id="contact">
   <h2 class="section-title">Contact</h2>
   <div class="contact-card">
-    <p style="margin-bottom:15px;">Open to FP&A, Business Analyst, and BI Analyst opportunities.</p>
-    <a href="mailto:nilam.dangi.57@gmail.com">nilam.dangi.57@gmail.com</a>
+    <p style="margin-bottom:20px;">Open to FP&A, Business Analyst, and BI Analyst opportunities.</p>
+    <div class="contact-links">
+      <a href="mailto:nilam.dangi.57@gmail.com">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="#6dd0ff"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+        Email
+      </a>
+      <a href="https://linkedin.com/in/nilamm-dangi" target="_blank">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="#6dd0ff"><path d="M19 3a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h14zM8.34 18v-8.4H5.67V18h2.67zM7 8.28c.93 0 1.5-.62 1.5-1.4-.02-.8-.57-1.4-1.48-1.4-.9 0-1.5.6-1.5 1.4 0 .78.58 1.4 1.46 1.4h.02zM18.34 18h-2.67v-4.7c0-1.1-.4-1.87-1.4-1.87-.76 0-1.2.5-1.4 1-.08.17-.1.4-.1.63V18h-2.67s.04-7.6 0-8.4h2.67v1.2c.35-.55 1-1.33 2.4-1.33 1.76 0 3.07 1.15 3.07 3.6V18z"/></svg>
+        LinkedIn
+      </a>
+    </div>
   </div>
 </section>
 
