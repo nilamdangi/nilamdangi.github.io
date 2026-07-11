@@ -1,0 +1,71 @@
+<svg width="900" height="560" viewBox="0 0 900 560" xmlns="http://www.w3.org/2000/svg" role="img">
+<title>Machine Learning vs Deep Learning comparison: Customer Churn Prediction using SVM versus Real-Time Fraud Detection using RNN</title>
+<defs>
+  <linearGradient id="headerGradLeft" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#4facfe"/>
+    <stop offset="100%" stop-color="#6dd0ff"/>
+  </linearGradient>
+  <linearGradient id="headerGradRight" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#7b61ff"/>
+    <stop offset="100%" stop-color="#a78bff"/>
+  </linearGradient>
+</defs>
+
+<rect x="0" y="0" width="900" height="560" fill="#0b0e14"/>
+
+<text x="450" y="42" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="800" fill="#ffffff">Machine Learning vs. Deep Learning</text>
+<text x="450" y="68" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#8fa0b8">Two financial services applications, two different approaches</text>
+
+<rect x="40" y="100" width="390" height="430" rx="14" fill="#121722" stroke="#1e2635" stroke-width="1.5"/>
+<rect x="40" y="100" width="390" height="56" rx="14" fill="url(#headerGradLeft)"/>
+<rect x="40" y="130" width="390" height="26" fill="url(#headerGradLeft)"/>
+<text x="235" y="134" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="800" fill="#052033">Machine Learning</text>
+
+<text x="70" y="184" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" fill="#6dd0ff">USE CASE</text>
+<text x="70" y="206" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" fill="#ffffff">Customer Churn Prediction</text>
+
+<text x="70" y="238" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" fill="#6dd0ff">ALGORITHM</text>
+<text x="70" y="260" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#cfd8e3">Support Vector Machine (SVM)</text>
+
+<text x="70" y="292" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" fill="#6dd0ff">FEATURE EXTRACTION</text>
+<text x="70" y="314" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#cfd8e3">Manually defined by analysts</text>
+<text x="70" y="334" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#cfd8e3">(tenure, usage, balance trends)</text>
+
+<text x="70" y="366" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" fill="#6dd0ff">DATA NEEDS</text>
+<text x="70" y="388" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#cfd8e3">Small-to-moderate, structured</text>
+
+<text x="70" y="420" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" fill="#6dd0ff">INTERPRETABILITY</text>
+<text x="70" y="442" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#cfd8e3">High — analysts can explain</text>
+<text x="70" y="462" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#cfd8e3">exactly why a score was given</text>
+
+<rect x="70" y="484" width="330" height="34" rx="17" fill="#0d1119" stroke="#263042"/>
+<text x="235" y="506" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#8fd3ff" font-weight="600">Real-world: Bank retention teams</text>
+
+<rect x="470" y="100" width="390" height="430" rx="14" fill="#121722" stroke="#1e2635" stroke-width="1.5"/>
+<rect x="470" y="100" width="390" height="56" rx="14" fill="url(#headerGradRight)"/>
+<rect x="470" y="130" width="390" height="26" fill="url(#headerGradRight)"/>
+<text x="665" y="134" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="800" fill="#1c1440">Deep Learning</text>
+
+<text x="500" y="184" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" fill="#b39dff">USE CASE</text>
+<text x="500" y="206" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" fill="#ffffff">Real-Time Fraud Detection</text>
+
+<text x="500" y="238" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" fill="#b39dff">ALGORITHM</text>
+<text x="500" y="260" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#cfd8e3">Recurrent Neural Network (RNN)</text>
+
+<text x="500" y="292" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" fill="#b39dff">FEATURE EXTRACTION</text>
+<text x="500" y="314" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#cfd8e3">Learned automatically from raw</text>
+<text x="500" y="334" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#cfd8e3">sequential transaction data</text>
+
+<text x="500" y="366" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" fill="#b39dff">DATA NEEDS</text>
+<text x="500" y="388" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#cfd8e3">Massive, continuous, real-time</text>
+
+<text x="500" y="420" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" fill="#b39dff">INTERPRETABILITY</text>
+<text x="500" y="442" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#cfd8e3">Lower — but adapts to new fraud</text>
+<text x="500" y="462" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#cfd8e3">patterns as they emerge</text>
+
+<rect x="500" y="484" width="330" height="34" rx="17" fill="#0d1119" stroke="#263042"/>
+<text x="665" y="506" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#c9b8ff" font-weight="600">Real-world: PayPal fraud prevention</text>
+
+<circle cx="450" cy="315" r="26" fill="#0d1119" stroke="#263042" stroke-width="1.5"/>
+<text x="450" y="320" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="800" fill="#8fa0b8">VS</text>
+</svg>
