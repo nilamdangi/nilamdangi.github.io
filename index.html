@@ -32,7 +32,32 @@
     font-size: 0.95em;
   }
   nav .links a:hover { color: #6dd0ff; }
-
+.nav-dropdown { position: relative; display: inline-block; }
+  .nav-dropdown > a { cursor: pointer; }
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #121722;
+    border: 1px solid #1e2635;
+    border-radius: 8px;
+    padding: 8px 0;
+    min-width: 200px;
+    margin-top: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+  }
+  .nav-dropdown:hover .dropdown-menu { display: block; }
+  .dropdown-menu a {
+    display: block;
+    padding: 10px 18px;
+    color: #b8c4d4;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9em;
+    margin-left: 0;
+  }
+  .dropdown-menu a:hover { color: #6dd0ff; background: #0d1119; }
   section { padding: 80px 40px; max-width: 950px; margin: 0 auto; }
 
   .hero h1 { font-size: 3em; color: #fff; margin-bottom: 15px; }
@@ -160,6 +185,11 @@
     <a href="#experience">Experience</a>
     <a href="#education">Education</a>
     <a href="#artifacts">Artifacts</a>
+   <span class="dropdown-menu">
+        <a href="#artifact-1">Artifact 1: Fintell</a>
+        <a href="#artifact-2">Artifact 2: ML vs. DL Report</a>
+      </span>
+    </span>
     <a href="#contact">Contact</a>
   </div>
 </nav>
@@ -309,6 +339,57 @@
     <div class="artifact-field">
       <span class="label">References</span>
       <a href="https://www.chatbase.co/LQl5SAztwvohYOHmXcmZK/help" target="_blank">Try Fintell — Live Agent</a>
+    </div>
+  </div>
+ <div class="card" id="artifact-2">
+    <h3>Artifact 2: <span class="product-name">ML vs. Deep Learning</span> Case Study Report</h3>
+
+    <img src="ml-dl-comparison.svg" alt="Comparison graphic showing Machine Learning (Customer Churn Prediction, SVM) versus Deep Learning (Real-Time Fraud Detection, RNN)" class="artifact-img">
+
+    <div class="artifact-field">
+      <span class="label">Introduction</span>
+      As part of my AI/ML coursework, I authored a comparative case study analyzing when to apply traditional machine learning versus deep learning, grounded in two real-world financial services applications.
+    </div>
+
+    <div class="artifact-field">
+      <span class="label">Description</span>
+      This report examines two AI/ML use cases within financial services: customer churn prediction, solved using a Support Vector Machine, and real-time payment fraud detection, solved using a Recurrent Neural Network. For each, I explain why the chosen approach fits the problem's data structure and constraints, and why the opposite approach would underperform or be inefficient, supported by academic and industry sources.
+    </div>
+
+    <div class="artifact-field">
+      <span class="label">Objective</span>
+      To demonstrate the ability to critically evaluate AI/ML techniques against real business problems, a core skill for translating between technical teams and financial/business stakeholders who need to know not just "can we use AI here," but "which approach actually fits this problem."
+    </div>
+
+    <div class="artifact-field">
+      <span class="label">Process</span>
+      I selected two structurally different problems within a single industry to make the comparison concrete rather than abstract. For churn prediction, I researched how banks use structured account data (tenure, usage, balance trends) with interpretable models. For fraud detection, I researched how PayPal applies RNNs to model sequential transaction behavior in real time. I supported each analysis with an academic citation and an industry source, then structured the report as a professional business document with clear headings and a defined argument in each section.
+      <img src="MLvsDL_image.png" alt="Screenshot showing the research and drafting process for the ML vs DL report" class="artifact-img">
+    </div>
+
+    <div class="artifact-field">
+      <span class="label">Tools and Technologies Used</span>
+      Research and technical analysis, APA-style academic citation, applied understanding of ML algorithms (SVM, Logistic Regression, Decision Trees) and DL architectures (RNN, CNN, Transformer models), professional business report writing.
+    </div>
+
+    <div class="artifact-field">
+      <span class="label">Value Proposition</span>
+      This artifact shows I can translate technical AI/ML concepts into clear, business-relevant reasoning, reasoning about tradeoffs like interpretability, data requirements, and adaptability, not just algorithm mechanics. That's the kind of analytical judgment needed in FP&A, BI Analyst, or Business Analyst roles evaluating which AI solution actually fits a given business problem.
+    </div>
+
+    <div class="artifact-field">
+      <span class="label">Unique Value</span>
+      Rather than treating ML and DL as interchangeable buzzwords, this report makes the case for each technique on its own terms, tying algorithm choice directly to data structure, interpretability needs, and how quickly a problem's patterns evolve over time.
+    </div>
+
+    <div class="artifact-field">
+      <span class="label">Relevance</span>
+      Directly relevant to finance and analytics roles where leadership needs a clear-eyed recommendation on AI approach, not just enthusiasm for AI in general, and where explaining technical tradeoffs to non-technical stakeholders is a daily skill.
+    </div>
+
+    <div class="artifact-field">
+      <span class="label">References</span>
+      <a href="Reference - Artifact 2.pdf" target="_blank">View Full Report (PDF)</a>
     </div>
   </div>
 </section>
