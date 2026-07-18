@@ -1,0 +1,50 @@
+<svg width="900" height="480" viewBox="0 0 900 480" xmlns="http://www.w3.org/2000/svg" role="img">
+<title>Four leadership principles for AI integration: culture awareness, ethical decision-making, emotional intelligence, and adaptability</title>
+<defs>
+  <linearGradient id="barGrad" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#4facfe"/>
+    <stop offset="100%" stop-color="#7b61ff"/>
+  </linearGradient>
+</defs>
+
+<rect x="0" y="0" width="900" height="480" fill="#0b0e14"/>
+
+<text x="450" y="42" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="800" fill="#ffffff">My AI Integration Leadership Principles</text>
+<rect x="375" y="56" width="150" height="3" rx="1.5" fill="url(#barGrad)"/>
+
+<rect x="40" y="90" width="400" height="170" rx="12" fill="#121722" stroke="#1e2635" stroke-width="1.5"/>
+<rect x="40" y="90" width="6" height="170" rx="3" fill="#4facfe"/>
+<text x="66" y="122" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" fill="#6dd0ff">PRINCIPLE 1</text>
+<text x="66" y="150" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="800" fill="#ffffff">Lead with culture</text>
+<text x="66" y="172" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="800" fill="#ffffff">awareness first</text>
+<text x="66" y="202" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#9fb1c7">Understand how a team</text>
+<text x="66" y="222" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#9fb1c7">works before changing it</text>
+<text x="66" y="244" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#6dd0ff" font-weight="700">Culture Understanding — Top Strength</text>
+
+<rect x="460" y="90" width="400" height="170" rx="12" fill="#121722" stroke="#1e2635" stroke-width="1.5"/>
+<rect x="460" y="90" width="6" height="170" rx="3" fill="#7b61ff"/>
+<text x="486" y="122" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" fill="#b39dff">PRINCIPLE 2</text>
+<text x="486" y="150" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="800" fill="#ffffff">Decide ethically before</text>
+<text x="486" y="172" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="800" fill="#ffffff">deciding technically</text>
+<text x="486" y="202" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#9fb1c7">Ask "should we" before</text>
+<text x="486" y="222" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#9fb1c7">"can we" with new AI tools</text>
+<text x="486" y="244" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#b39dff" font-weight="700">Ethical &amp; Responsible AI — Top Strength</text>
+
+<rect x="40" y="280" width="400" height="170" rx="12" fill="#121722" stroke="#1e2635" stroke-width="1.5"/>
+<rect x="40" y="280" width="6" height="170" rx="3" fill="#4facfe"/>
+<text x="66" y="312" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" fill="#6dd0ff">PRINCIPLE 3</text>
+<text x="66" y="340" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="800" fill="#ffffff">Read the room</text>
+<text x="66" y="362" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="800" fill="#ffffff">before you lead it</text>
+<text x="66" y="392" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#9fb1c7">Name discomfort openly,</text>
+<text x="66" y="412" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#9fb1c7">adjust based on real reactions</text>
+<text x="66" y="434" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#6dd0ff" font-weight="700">Emotional Intelligence — Top Strength</text>
+
+<rect x="460" y="280" width="400" height="170" rx="12" fill="#121722" stroke="#1e2635" stroke-width="1.5"/>
+<rect x="460" y="280" width="6" height="170" rx="3" fill="#7b61ff"/>
+<text x="486" y="312" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" fill="#b39dff">PRINCIPLE 4</text>
+<text x="486" y="340" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="800" fill="#ffffff">Stay adaptive,</text>
+<text x="486" y="362" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="800" fill="#ffffff">not rigid</text>
+<text x="486" y="392" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#9fb1c7">Treat a plan as a starting</text>
+<text x="486" y="412" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#9fb1c7">hypothesis, not a fixed script</text>
+<text x="486" y="434" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#b39dff" font-weight="700">Change Readiness — Growth Area</text>
+</svg>
