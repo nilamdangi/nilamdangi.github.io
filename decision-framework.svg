@@ -1,0 +1,63 @@
+<svg width="900" height="620" viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg" role="img">
+<title>AI/ML use-case decision framework for financial services: mapping data characteristics to the right approach and a finance example</title>
+<defs>
+  <linearGradient id="hdrGrad" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#4facfe"/>
+    <stop offset="100%" stop-color="#7b61ff"/>
+  </linearGradient>
+</defs>
+
+<rect x="0" y="0" width="900" height="620" fill="#0b0e14"/>
+
+<text x="450" y="36" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="800" fill="#ffffff">AI/ML Use-Case Decision Framework</text>
+<text x="450" y="58" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#8fa0b8">Matching data characteristics to the right technique in financial services</text>
+
+<rect x="40" y="80" width="820" height="34" rx="8" fill="url(#hdrGrad)"/>
+<text x="180" y="102" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="800" fill="#052033">IF YOUR DATA LOOKS LIKE</text>
+<text x="480" y="102" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="800" fill="#052033">USE THIS APPROACH</text>
+<text x="740" y="102" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="800" fill="#052033">FINANCE EXAMPLE</text>
+
+<rect x="40" y="128" width="820" height="106" rx="10" fill="#121722" stroke="#1e2635" stroke-width="1.5"/>
+<rect x="40" y="128" width="6" height="106" fill="#4facfe"/>
+<text x="66" y="162" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" fill="#ffffff">No labeled outcomes —</text>
+<text x="66" y="182" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" fill="#ffffff">need to find hidden patterns</text>
+<line x1="330" y1="140" x2="330" y2="222" stroke="#1e2635" stroke-width="1"/>
+<text x="480" y="162" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" fill="#6dd0ff">Unsupervised Learning</text>
+<text x="480" y="182" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#9fb1c7">(Clustering)</text>
+<line x1="610" y1="140" x2="610" y2="222" stroke="#1e2635" stroke-width="1"/>
+<text x="740" y="168" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#cfd8e3">Customer segmentation,</text>
+<text x="740" y="188" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#cfd8e3">transaction anomaly detection</text>
+
+<rect x="40" y="246" width="820" height="106" rx="10" fill="#121722" stroke="#1e2635" stroke-width="1.5"/>
+<rect x="40" y="246" width="6" height="106" fill="#7b61ff"/>
+<text x="66" y="280" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" fill="#ffffff">Structured, labeled data —</text>
+<text x="66" y="300" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" fill="#ffffff">limited, well-defined features</text>
+<line x1="330" y1="258" x2="330" y2="340" stroke="#1e2635" stroke-width="1"/>
+<text x="480" y="280" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" fill="#b39dff">Traditional Machine Learning</text>
+<text x="480" y="300" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#9fb1c7">(SVM, Logistic Regression, Decision Trees)</text>
+<line x1="610" y1="258" x2="610" y2="340" stroke="#1e2635" stroke-width="1"/>
+<text x="740" y="286" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#cfd8e3">Customer churn prediction,</text>
+<text x="740" y="306" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#cfd8e3">credit risk scoring</text>
+
+<rect x="40" y="364" width="820" height="106" rx="10" fill="#121722" stroke="#1e2635" stroke-width="1.5"/>
+<rect x="40" y="364" width="6" height="106" fill="#4facfe"/>
+<text x="66" y="398" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" fill="#ffffff">Raw, high-volume, sequential —</text>
+<text x="66" y="418" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" fill="#ffffff">needs automatic pattern detection</text>
+<line x1="330" y1="376" x2="330" y2="458" stroke="#1e2635" stroke-width="1"/>
+<text x="480" y="398" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" fill="#6dd0ff">Deep Learning</text>
+<text x="480" y="418" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#9fb1c7">(RNN, CNN, Transformer models)</text>
+<line x1="610" y1="376" x2="610" y2="458" stroke="#1e2635" stroke-width="1"/>
+<text x="740" y="404" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#cfd8e3">Real-time fraud detection,</text>
+<text x="740" y="424" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#cfd8e3">contract/document analysis</text>
+
+<rect x="40" y="482" width="820" height="106" rx="10" fill="#121722" stroke="#1e2635" stroke-width="1.5"/>
+<rect x="40" y="482" width="6" height="106" fill="#7b61ff"/>
+<text x="66" y="516" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" fill="#ffffff">Sequential decisions with</text>
+<text x="66" y="536" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" fill="#ffffff">reward-based feedback over time</text>
+<line x1="330" y1="494" x2="330" y2="576" stroke="#1e2635" stroke-width="1"/>
+<text x="480" y="516" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" fill="#b39dff">Reinforcement Learning</text>
+<text x="480" y="536" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#9fb1c7">(reward/penalty optimization)</text>
+<line x1="610" y1="494" x2="610" y2="576" stroke="#1e2635" stroke-width="1"/>
+<text x="740" y="520" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#cfd8e3">Algorithmic trading</text>
+<text x="740" y="540" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#cfd8e3">strategy optimization</text>
+</svg>
