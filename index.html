@@ -191,6 +191,7 @@
         <a href="#artifact-2">Artifact 2: ML vs. DL Report</a>
         <a href="#artifact-3">Artifact 3: Leadership Philosophy</a>
         <a href="#artifact-4">Artifact 4: Decision Framework</a>
+        <a href="#artifact-5">Artifact 5: ML Lifecycle Case Study</a>
       </span>
     </span>
     <a href="#contact">Contact</a>
@@ -495,6 +496,56 @@
       <a href="AIML_Decision_Framework.pdf" target="_blank">View Full Reference Document (PDF)</a>
     </div>
 </div>
+</div>
+ <div class="card" id="artifact-5">
+    <h3>Artifact 5: <span class="product-name">ML Lifecycle Case Study</span> — Credit-Card Fraud Detection</h3>
+
+    <img src="ml-lifecycle.svg" alt="Machine learning lifecycle covered in the fraud detection case study: data preprocessing, model selection and validation, performance evaluation, ethical considerations, and post-deployment monitoring" class="artifact-img">
+
+    <div class="artifact-field">
+      <span class="label">Introduction</span>
+      As my strongest technical artifact this term, I critically analyzed a peer-reviewed, real-world machine learning project, credit-card fraud detection, against the full ML development lifecycle: preprocessing, model selection, validation, evaluation, ethics, and monitoring.
+    </div>
+
+    <div class="artifact-field">
+      <span class="label">Description</span>
+      This case study examines Jurgovsky et al.'s (2018) published research comparing an LSTM sequence model against a Random Forest baseline for detecting credit-card fraud. I analyzed how the researchers handled severe class imbalance, why they chose a chronological validation split over a random one, why precision-recall metrics mattered more than raw accuracy for this problem, and, critically, where the published methodology fell short: largely omitting fairness auditing and a concrete post-deployment monitoring plan.
+    </div>
+
+    <div class="artifact-field">
+      <span class="label">Objective</span>
+      To demonstrate the ability to critically evaluate a real ML project across its entire lifecycle, not just its reported accuracy, applying course best practices in data preprocessing, model justification, validation methodology, and ethical AI/ML development to work I didn't build myself.
+    </div>
+
+    <div class="artifact-field">
+      <span class="label">Process</span>
+      I selected a peer-reviewed fraud-detection study specifically because it involved genuine technical tradeoffs: an imbalanced dataset, a sequence-based deep learning model compared against a traditional baseline, and a validation strategy that had to account for the time-dependent nature of transaction data. I evaluated each stage of the published methodology against best practices covered in this course, and explicitly identified where the paper's technical rigor didn't extend to ethical safeguards or deployment planning, then proposed what a more complete version of that pipeline would include.
+    </div>
+
+    <div class="artifact-field">
+      <span class="label">Tools and Technologies Used</span>
+      Critical technical analysis, ML lifecycle evaluation (preprocessing, validation, precision-recall metrics), applied AI ethics, APA research citation.
+    </div>
+
+    <div class="artifact-field">
+      <span class="label">Value Proposition</span>
+      This artifact directly demonstrates core AI/ML competencies: evaluating model choices against data structure, understanding why validation strategy must match real-world deployment conditions, and applying an ethical lens to technical work that treated ethics as an afterthought. It shows I can assess someone else's ML pipeline critically, not just build and describe my own.
+    </div>
+
+    <div class="artifact-field">
+      <span class="label">Unique Value</span>
+      Rather than only summarizing a published study, this analysis explicitly separates what the researchers did well (model-data fit, imbalance-aware evaluation) from what a responsible deployment would still need (fairness audits, drift monitoring), showing critical judgment rather than simple description.
+    </div>
+
+    <div class="artifact-field">
+      <span class="label">Relevance</span>
+      Directly relevant to any role evaluating third-party or vendor AI/ML solutions, a common real-world task in finance, where the job isn't building every model in-house but critically assessing whether a proposed model, published benchmark, or vendor claim actually holds up across the full lifecycle.
+    </div>
+
+    <div class="artifact-field">
+      <span class="label">References</span>
+      <a href="Fraud_Detection_Case_Study.pdf" target="_blank">View Full Case Study (PDF)</a>
+    </div>
 </div>
 </section>
 
