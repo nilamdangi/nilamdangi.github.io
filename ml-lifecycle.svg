@@ -1,0 +1,43 @@
+<svg width="900" height="320" viewBox="0 0 900 320" xmlns="http://www.w3.org/2000/svg" role="img">
+<title>Machine learning lifecycle covered in the fraud detection case study: data preprocessing, model selection and validation, performance evaluation, ethical considerations, and post-deployment monitoring</title>
+<defs>
+  <marker id="arrow5" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M2 1L8 5L2 9" fill="none" stroke="#3a4558" stroke-width="1.5"/>
+  </marker>
+</defs>
+
+<rect x="0" y="0" width="900" height="320" fill="#0b0e14"/>
+
+<text x="450" y="34" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="800" fill="#ffffff">The Full ML Lifecycle, Analyzed End-to-End</text>
+<text x="450" y="56" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#8fa0b8">Applied to a real, published credit-card fraud detection study</text>
+
+<line x1="120" y1="170" x2="800" y2="170" stroke="#3a4558" stroke-width="1.5" marker-end="url(#arrow5)"/>
+
+<rect x="80" y="90" width="150" height="80" rx="10" fill="#121722" stroke="#4facfe" stroke-width="1.5"/>
+<text x="155" y="122" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" fill="#6dd0ff">Data</text>
+<text x="155" y="138" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" fill="#6dd0ff">Preprocessing</text>
+<text x="155" y="156" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#9fb1c7">Class imbalance</text>
+
+<rect x="240" y="90" width="150" height="80" rx="10" fill="#121722" stroke="#7b61ff" stroke-width="1.5"/>
+<text x="315" y="122" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" fill="#b39dff">Model Selection</text>
+<text x="315" y="138" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" fill="#b39dff">and Validation</text>
+<text x="315" y="156" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#9fb1c7">LSTM vs. Random Forest</text>
+
+<rect x="400" y="90" width="150" height="80" rx="10" fill="#121722" stroke="#4facfe" stroke-width="1.5"/>
+<text x="475" y="122" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" fill="#6dd0ff">Performance</text>
+<text x="475" y="138" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" fill="#6dd0ff">Evaluation</text>
+<text x="475" y="156" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#9fb1c7">Precision-recall focus</text>
+
+<rect x="560" y="90" width="150" height="80" rx="10" fill="#121722" stroke="#7b61ff" stroke-width="1.5"/>
+<text x="635" y="122" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" fill="#b39dff">Ethical</text>
+<text x="635" y="138" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" fill="#b39dff">Considerations</text>
+<text x="635" y="156" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#9fb1c7">Bias, fairness, privacy</text>
+
+<rect x="720" y="90" width="150" height="80" rx="10" fill="#121722" stroke="#4facfe" stroke-width="1.5"/>
+<text x="795" y="122" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" fill="#6dd0ff">Post-Deployment</text>
+<text x="795" y="138" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" fill="#6dd0ff">Monitoring</text>
+<text x="795" y="156" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#9fb1c7">Drift, human review</text>
+
+<text x="450" y="230" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#8fa0b8">Case study: Jurgovsky et al. (2018), Sequence Classification for Credit-Card Fraud Detection</text>
+<text x="450" y="252" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#8fa0b8">Each stage critically compared against course best practices, with gaps identified and addressed</text>
+</svg>
