@@ -4,177 +4,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Nilam Dangi — Portfolio</title>
-<style>
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  body {
-    font-family: 'Segoe UI', Arial, sans-serif;
-    background: #0b0e14;
-    color: #cfd8e3;
-    line-height: 1.7;
-  }
-  nav {
-    position: sticky;
-    top: 0;
-    background: #0d1119;
-    border-bottom: 1px solid #1c2330;
-    padding: 20px 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
-  }
-  nav .logo { font-weight: 800; color: #6dd0ff; font-size: 1.3em; }
-  nav .links a {
-    color: #b8c4d4;
-    text-decoration: none;
-    margin-left: 30px;
-    font-weight: 600;
-    font-size: 0.95em;
-  }
-  nav .links a:hover { color: #6dd0ff; }
-.nav-dropdown { position: relative; display: inline-block; }
-  .nav-dropdown > a { cursor: pointer; }
-  .dropdown-menu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background: #121722;
-    border: 1px solid #1e2635;
-    border-radius: 8px;
-    padding: 8px 0;
-    min-width: 200px;
-    margin-top: 10px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
-  }
-  .nav-dropdown:hover .dropdown-menu { display: block; }
-  .dropdown-menu a {
-    display: block;
-    padding: 10px 18px;
-    color: #b8c4d4;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 0.9em;
-    margin-left: 0;
-  }
-  .dropdown-menu a:hover { color: #6dd0ff; background: #0d1119; }
-  section { padding: 80px 40px; max-width: 950px; margin: 0 auto; }
-
-  .hero h1 { font-size: 3em; color: #fff; margin-bottom: 15px; }
-  .hero p.subtitle { font-size: 1.15em; color: #6dd0ff; font-weight: 600; max-width: 700px; margin-bottom: 20px; }
-  .hero p.desc { font-size: 1.05em; color: #9fb1c7; max-width: 720px; margin-bottom: 30px; }
-  .btns { margin-bottom: 30px; }
-  .btn-primary {
-    background: linear-gradient(90deg, #4facfe, #7b61ff);
-    color: white;
-    border: none;
-    padding: 12px 26px;
-    border-radius: 8px;
-    font-weight: 700;
-    text-decoration: none;
-    margin-right: 15px;
-    display: inline-block;
-  }
-  .btn-secondary {
-    border: 1px solid #3a4558;
-    color: #cfd8e3;
-    padding: 12px 26px;
-    border-radius: 8px;
-    font-weight: 700;
-    text-decoration: none;
-    display: inline-block;
-  }
-  .tags { margin-top: 25px; }
-  .tag {
-    display: inline-block;
-    background: #141b28;
-    border: 1px solid #263042;
-    color: #8fd3ff;
-    padding: 6px 16px;
-    border-radius: 20px;
-    font-size: 0.85em;
-    margin: 4px 6px 4px 0;
-  }
-
-  .card {
-    background: #121722;
-    border: 1px solid #1e2635;
-    border-radius: 12px;
-    padding: 30px;
-    margin-top: 25px;
-  }
-  .card h3 { color: #fff; font-size: 1.15em; margin-bottom: 5px; }
-  .card .meta { color: #6dd0ff; font-size: 0.9em; margin-bottom: 12px; font-weight: 600; }
-  .card ul { margin-left: 20px; color: #b8c4d4; }
-  .card ul li { margin-bottom: 8px; }
-  .card p { color: #b8c4d4; }
-
-  h2.section-title {
-    color: #fff;
-    font-size: 2em;
-    margin-bottom: 10px;
-  }
-  p.section-intro { color: #8fa0b8; margin-bottom: 10px; max-width: 700px; }
-
-  .artifact-field { margin-bottom: 16px; }
-  .artifact-field .label {
-    color: #6dd0ff;
-    font-weight: 700;
-    text-transform: uppercase;
-    font-size: 0.8em;
-    letter-spacing: 0.5px;
-    display: block;
-    margin-bottom: 4px;
-  }
-  .artifact-field a { color: #8fd3ff; }
-
-  .artifact-img {
-    width: 100%;
-    border-radius: 8px;
-    margin: 20px 0;
-    border: 1px solid #1e2635;
-    display: block;
-  }
-
-  .product-name {
-    color: #4facfe;
-    font-weight: 800;
-  }
-
-  .contact-card {
-    background: #121722;
-    border: 1px solid #1e2635;
-    border-radius: 12px;
-    padding: 40px;
-    text-align: center;
-    margin-top: 20px;
-  }
-  .contact-card a {
-    color: #6dd0ff;
-    text-decoration: none;
-    font-weight: 600;
-  }
-  .contact-links {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    margin-top: 10px;
-    flex-wrap: wrap;
-  }
-  .contact-links a {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-  }
-
-  footer {
-    text-align: center;
-    padding: 30px;
-    color: #566379;
-    font-size: 0.85em;
-    border-top: 1px solid #1c2330;
-  }
-</style>
+<meta name="description" content="Nilam Dangi — Finance and data analytics professional pursuing an MS in Artificial Intelligence. FP&A experience plus applied AI/ML portfolio artifacts.">
+<meta property="og:title" content="Nilam Dangi — Portfolio">
+<meta property="og:description" content="Finance & data analytics professional applying AI to financial and operational decision-making.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://nilamdangi.github.io/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230d1119'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='Segoe UI,Arial' font-weight='800' font-size='28' fill='%236dd0ff'%3END%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
@@ -184,9 +20,9 @@
     <a href="#home">Home</a>
     <a href="#experience">Experience</a>
     <a href="#education">Education</a>
-   <span class="nav-dropdown">
-    <a href="#artifacts">Artifacts</a>
-   <span class="dropdown-menu">
+    <span class="nav-dropdown">
+      <a href="#artifacts">Artifacts</a>
+      <span class="dropdown-menu">
         <a href="#artifact-1">Artifact 1: Fintell</a>
         <a href="#artifact-2">Artifact 2: ML vs. DL Report</a>
         <a href="#artifact-3">Artifact 3: Leadership Philosophy</a>
@@ -236,11 +72,11 @@
 
   <div class="card">
     <h3>Financial Analyst</h3>
-    <div class="meta">Sysco Corporation | November 2025 – Present</div>
+    <div class="meta">Sysco Corporation | November 2025 – November 2026</div>
     <ul>
-      <li>Develop weekly and monthly financial reporting for multi-site distribution operations, analyzing sales, inflation, shrink, spoilage, and margin trends</li>
-      <li>Conduct monthly and quarterly P&L analysis to monitor revenue, expenses, and profitability across product lines</li>
-      <li>Build Tableau dashboards and executive presentations used in senior leadership reviews</li>
+      <li>Developed weekly and monthly financial reporting for multi-site distribution operations, analyzing sales, inflation, shrink, spoilage, and margin trends</li>
+      <li>Conducted monthly and quarterly P&L analysis to monitor revenue, expenses, and profitability across product lines</li>
+      <li>Built Tableau dashboards and executive presentations used in senior leadership reviews</li>
       <li>Built an automated spend tracking tool improving visibility into promotional and operating expenses</li>
     </ul>
   </div>
@@ -295,10 +131,10 @@
   <h2 class="section-title">Portfolio Artifacts</h2>
   <p class="section-intro">Work demonstrating applied AI/ML skills grounded in real financial domain expertise.</p>
 
-  <div class="card">
+  <div class="card" id="artifact-1">
     <h3>Artifact 1: <span class="product-name">Fintell</span> - An AI Variance Investigation Assistant</h3>
 
-    <img src="variance-bot-demo.png" alt="Fintell conversation example" class="artifact-img">
+    <img src="assets/images/fintell-demo.png" alt="Fintell conversation example" class="artifact-img" loading="lazy">
 
     <div class="artifact-field">
       <span class="label">Introduction</span>
@@ -348,7 +184,7 @@
  <div class="card" id="artifact-2">
     <h3>Artifact 2: <span class="product-name">ML vs. Deep Learning</span> Case Study Report</h3>
 
-    <img src="ml-dl-comparison.svg" alt="Comparison graphic showing Machine Learning (Customer Churn Prediction, SVM) versus Deep Learning (Real-Time Fraud Detection, RNN)" class="artifact-img">
+    <img src="assets/images/ml-dl-comparison.svg" alt="Comparison graphic showing Machine Learning (Customer Churn Prediction, SVM) versus Deep Learning (Real-Time Fraud Detection, RNN)" class="artifact-img" loading="lazy">
 
     <div class="artifact-field">
       <span class="label">Introduction</span>
@@ -368,7 +204,7 @@
     <div class="artifact-field">
       <span class="label">Process</span>
       I selected two structurally different problems within a single industry to make the comparison concrete rather than abstract. For churn prediction, I researched how banks use structured account data (tenure, usage, balance trends) with interpretable models. For fraud detection, I researched how PayPal applies RNNs to model sequential transaction behavior in real time. I supported each analysis with an academic citation and an industry source, then structured the report as a professional business document with clear headings and a defined argument in each section.
-      <img src="MLvsDL_image.png" alt="Screenshot showing the research and drafting process for the ML vs DL report" class="artifact-img">
+      <img src="assets/images/ml-vs-dl-process.jpg" alt="Screenshot showing the research and drafting process for the ML vs DL report" class="artifact-img" loading="lazy">
     </div>
 
     <div class="artifact-field">
@@ -393,13 +229,13 @@
 
     <div class="artifact-field">
       <span class="label">References</span>
-      <a href="Reference - Artifact 2.pdf" target="_blank">View Full Report (PDF)</a>
+      <a href="assets/docs/ml-vs-dl-report.pdf" target="_blank">View Full Report (PDF)</a>
     </div>
   </div>
  <div class="card" id="artifact-3">
     <h3>Artifact 3: <span class="product-name">Leadership Philosophy & Story Bank</span> for AI Integration</h3>
 
-    <img src="leadership-principles.svg" alt="Four leadership principles for AI integration: culture awareness, ethical decision-making, emotional intelligence, and adaptability" class="artifact-img">
+    <img src="assets/images/leadership-principles.svg" alt="Four leadership principles for AI integration: culture awareness, ethical decision-making, emotional intelligence, and adaptability" class="artifact-img" loading="lazy">
 
     <div class="artifact-field">
       <span class="label">Introduction</span>
@@ -443,13 +279,13 @@
 
     <div class="artifact-field">
       <span class="label">References</span>
-      <a href="Leadership_Philosophy.pdf" target="_blank">View Full Document (PDF)</a>
+      <a href="assets/docs/leadership-philosophy.pdf" target="_blank">View Full Document (PDF)</a>
     </div>
 </div>
  <div class="card" id="artifact-4">
     <h3>Artifact 4: <span class="product-name">AI/ML Use-Case Decision Framework</span> for Financial Services</h3>
 
-    <img src="decision-framework.svg" alt="Decision framework mapping data characteristics to unsupervised learning, traditional machine learning, deep learning, and reinforcement learning, each with a finance example" class="artifact-img">
+    <img src="assets/images/decision-framework.svg" alt="Decision framework mapping data characteristics to unsupervised learning, traditional machine learning, deep learning, and reinforcement learning, each with a finance example" class="artifact-img" loading="lazy">
 
     <div class="artifact-field">
       <span class="label">Introduction</span>
@@ -493,14 +329,13 @@
 
     <div class="artifact-field">
       <span class="label">References</span>
-      <a href="AIML_Decision_Framework.pdf" target="_blank">View Full Reference Document (PDF)</a>
+      <a href="assets/docs/aiml-decision-framework.pdf" target="_blank">View Full Reference Document (PDF)</a>
     </div>
-</div>
 </div>
  <div class="card" id="artifact-5">
     <h3>Artifact 5: <span class="product-name">ML Lifecycle Case Study</span> — Credit-Card Fraud Detection</h3>
 
-    <img src="ml-lifecycle.svg" alt="Machine learning lifecycle covered in the fraud detection case study: data preprocessing, model selection and validation, performance evaluation, ethical considerations, and post-deployment monitoring" class="artifact-img">
+    <img src="assets/images/ml-lifecycle.svg" alt="Machine learning lifecycle covered in the fraud detection case study: data preprocessing, model selection and validation, performance evaluation, ethical considerations, and post-deployment monitoring" class="artifact-img" loading="lazy">
 
     <div class="artifact-field">
       <span class="label">Introduction</span>
@@ -544,13 +379,15 @@
 
     <div class="artifact-field">
       <span class="label">References</span>
-      <a href="Fraud_Detection_Case_Study.pdf" target="_blank">View Full Case Study (PDF)</a>
+      <a href="assets/docs/fraud-detection-case-study.pdf" target="_blank">View Full Case Study (PDF)</a>
     </div>
 </div>
 </section>
 
 <section id="contact">
   <h2 class="section-title">Contact</h2>
+  <div class="contact-card">
+    <p>Open to Financial Analyst, FP&amp;A, and Data/Business Analyst opportunities. I'd love to connect.</p>
     <div class="contact-links">
       <a href="mailto:nilam.dangi.57@gmail.com">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="#6dd0ff"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
